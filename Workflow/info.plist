@@ -441,7 +441,7 @@ https://github.com/vitorgalvao/notificator</string>
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<false/>
+				<true/>
 				<key>required</key>
 				<false/>
 				<key>text</key>

@@ -196,6 +196,20 @@ function run(argv) {
     // Sort items by title (most recent subjects tend to be processed first)
     items.sort((a, b) => a.title.localeCompare(b.title));
 
+    // If no codes found, add a fallback item
+    if (items.length === 0) {
+        items.push({
+            title: "No 2FA codes found",
+            subtitle: "No emails with valid 6+ digit codes detected",
+            arg: "",
+            uid: "no-codes-found",
+            valid: false,
+            icon: {
+                path: "warning.png"
+            }
+        });
+    }
+
     // Return Alfred script filter JSON format
     return JSON.stringify({ items: items });
 }
