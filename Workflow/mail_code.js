@@ -156,7 +156,6 @@ function processMessages(messages, maxCount = 5) {
                     title: `${subject}, Code: ${captchaCode}`,
                     subtitle: getCodeContext(cleanText, captchaCode),
                     arg: captchaCode,
-                    uid: messageId,
                     variables: {
                         messageId: messageId.toString()
                     }
@@ -206,7 +205,6 @@ function getMail2FACodes() {
             title: "No 2FA codes found",
             subtitle: "No emails with valid 6+ digit codes detected",
             arg: "",
-            uid: "no-codes-found",
             valid: false,
             icon: {
                 path: "warning.png"
