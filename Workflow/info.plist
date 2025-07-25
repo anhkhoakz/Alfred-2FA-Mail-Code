@@ -367,7 +367,7 @@
 			<key>xpos</key>
 			<real>725</real>
 			<key>ypos</key>
-			<real>20</real>
+			<real>125</real>
 		</dict>
 		<key>34048ED5-DBA8-41F9-A311-7141456C517E</key>
 		<dict>
@@ -379,14 +379,14 @@ https://github.com/vitorgalvao/notificator</string>
 			<key>xpos</key>
 			<real>1130</real>
 			<key>ypos</key>
-			<real>35</real>
+			<real>140</real>
 		</dict>
 		<key>54FC2D9C-1219-42FD-9206-D2C15314831C</key>
 		<dict>
 			<key>xpos</key>
 			<real>620</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>155</real>
 		</dict>
 		<key>7E18EA93-A903-43E8-9CCA-1325C78C06C1</key>
 		<dict>
@@ -395,14 +395,14 @@ https://github.com/vitorgalvao/notificator</string>
 			<key>xpos</key>
 			<real>725</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>290</real>
 		</dict>
 		<key>985E4534-ACCE-408E-9DD5-27BE4048784D</key>
 		<dict>
 			<key>xpos</key>
 			<real>465</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>160</real>
 		</dict>
 		<key>B1CCA9A0-99EC-46DB-BF61-E17A96EE7B1F</key>
 		<dict>
@@ -411,21 +411,21 @@ https://github.com/vitorgalvao/notificator</string>
 			<key>xpos</key>
 			<real>465</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>290</real>
 		</dict>
 		<key>C0AE6BD8-4070-4AC7-9B02-10F09F945681</key>
 		<dict>
 			<key>xpos</key>
 			<real>895</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>145</real>
 		</dict>
 		<key>CD250C70-F3E6-436F-A6F2-875DF81420A0</key>
 		<dict>
 			<key>xpos</key>
 			<real>1025</real>
 			<key>ypos</key>
-			<real>65</real>
+			<real>170</real>
 		</dict>
 		<key>E2C0AD88-4AC9-432C-9E8C-3729F7CFCCA1</key>
 		<dict>
@@ -434,7 +434,7 @@ https://github.com/vitorgalvao/notificator</string>
 			<key>xpos</key>
 			<real>115</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>290</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
