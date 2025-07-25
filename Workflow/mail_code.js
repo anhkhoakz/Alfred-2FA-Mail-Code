@@ -103,6 +103,16 @@ function run(argv) {
         return result;
     }
 
+    // Check if a code has valid patterns (not repeating digits)
+    function isValidCode(code) {
+        // Check for 4+ consecutive identical digits (0000, 1111, etc.)
+        if (/(\d)\1{3,}/.test(code)) {
+            return false;
+        }
+        
+        return true;
+    }
+
     // Extract 2FA code from message content (ported from Messages workflow)
     function extractCaptchaFromContent(content) {
         // Remove HTML tags first
@@ -114,14 +124,18 @@ function run(argv) {
             ''
         );
 
-        // Match numbers with 3 to 7 digits, not part of currency amounts
-        const regex = /\b(?<![.,]\d|€|\$|£)(\d{3,7})(?!\d|[.,]\d|€|\$|£)\b/g;
+        // Match numbers with 6 to 8 digits, not part of currency amounts
+        const regex = /\b(?<![.,]\d|€|\$|£)(\d{6,8})(?!\d|[.,]\d|€|\$|£)\b/g;
 
         // Collect all matches
         const matches = [];
         let match;
         while ((match = regex.exec(cleanedMsg)) !== null) {
-            matches.push(match[0]);
+            const code = match[0];
+            // Only include codes that pass validation
+            if (isValidCode(code)) {
+                matches.push(code);
+            }
         }
 
         // Sort by length in descending order (longer codes first)
