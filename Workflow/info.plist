@@ -357,7 +357,17 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># 2FA Email Codes
+
+Extract 2FA codes from Apple’s Mail.app with Alfred.
+
+## Usage
+
+Extract verification codes from Mail.app via the keyword `mailcode`.
+
+![Extract verification code via keyword](images/showcase_1.png)
+
+* &lt;kbd&gt;↩&lt;/kbd&gt; Copy code and paste to frontmost app.</string>
 	<key>uidata</key>
 	<dict>
 		<key>2305F841-1106-4B1D-BAC8-5C392F915A03</key>
