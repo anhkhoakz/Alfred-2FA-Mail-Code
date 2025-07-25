@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.may-june-july.2FAMailCodes</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>2305F841-1106-4B1D-BAC8-5C392F915A03</key>
@@ -113,11 +115,11 @@
 	<key>createdby</key>
 	<string>May June July</string>
 	<key>description</key>
-	<string></string>
+	<string>Extract verification codes from Mail.app</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>2FA Codes from Mail</string>
+	<string>2FA Email Codes</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -460,6 +462,6 @@ https://github.com/vitorgalvao/notificator</string>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
-	<string>https://github.com/April-June-August/</string>
+	<string>https://github.com/April-June-August/Alfred--2FA-Mail-Code</string>
 </dict>
 </plist>
