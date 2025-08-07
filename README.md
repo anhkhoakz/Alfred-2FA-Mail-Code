@@ -1,4 +1,4 @@
-# <img src='Workflow/icon.png' width='45' align='center' alt='icon'> 2FA Email Codes Alfred Workflow
+# <img src='Workflow/icon.png' width='45' align='center' alt='icon'> 2FA Email Codes — An Alfred Workflow
 
 Extract 2FA codes from Apple’s Mail.app with [Alfred](https://www.alfredapp.com/).
 
