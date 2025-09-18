@@ -208,21 +208,25 @@ function getMail2FACodes() {
     items = items.concat(processMessages(inboxMessages, 5));
     items = items.concat(processMessages(junkMessages, 5));
 
+    let result = { items: items };
 
-    // If no codes found, add a fallback item
+    // If no codes found, add a fallback item and set rerun
     if (items.length === 0) {
-        items.push({
-            title: "No 2FA codes found",
-            subtitle: "No emails with valid 6+ digit codes detected",
-            arg: "",
-            valid: false,
-            icon: {
-                path: "warning.png"
-            }
-        });
+        result = {
+            rerun: 2.0,
+            items: [{
+                title: "No 2FA codes found",
+                subtitle: "No emails with valid 6+ digit codes detected",
+                arg: "",
+                valid: false,
+                icon: {
+                    path: "warning.png"
+                }
+            }]
+        };
     }
 
-    return { items: items };
+    return result;
 }
 
 function run(argv) {
