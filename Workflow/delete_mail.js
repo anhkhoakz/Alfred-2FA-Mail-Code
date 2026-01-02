@@ -18,7 +18,7 @@ function findAndDeleteMessage(messages, messageIdToDelete) {
 // Main function to delete mail by ID
 function deleteMailById(messageIdToDelete) {
     // Access the Mail application
-    const Mail = Application("Mail");
+    const Mail = Application('Mail');
     Mail.includeStandardAdditions = true;
 
     try {
@@ -54,7 +54,7 @@ function deleteMailById(messageIdToDelete) {
     }
 }
 
-function _run(argv) {
+function run(argv) {
     // Check if message ID argument is provided
     if (!argv || argv.length === 0) {
         return false;
